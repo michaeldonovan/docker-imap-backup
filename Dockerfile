@@ -1,7 +1,7 @@
 FROM ruby:3.1-alpine
 
 # install gem
-RUN gem install 'imap-backup'
+RUN gem install 'imap-backup' -v 5.2.0
 
 # install curl for healthchecks
 RUN apk --no-cache add curl
