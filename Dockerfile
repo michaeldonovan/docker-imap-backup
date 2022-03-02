@@ -3,6 +3,9 @@ FROM ruby:3.1-alpine
 # install gem
 RUN gem install 'imap-backup'
 
+# install curl for healthchecks
+RUN apk --no-cache add curl
+
 # add cron log
 RUN touch /var/log/cron.log
 
