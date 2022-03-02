@@ -9,7 +9,9 @@ fi
 
 echo "[$(date)] Starting imap backup…"
 
-result=$(imap-backup)
+imap-backup
+
+result=$?
 
 if [ -n ${HEALTHCHECK_URL+x} ]; then 
     echo "Pinging healthcheck end"
