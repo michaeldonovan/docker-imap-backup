@@ -1,4 +1,4 @@
-FROM ruby:2.3-alpine
+FROM ruby:3.1-alpine
 
 # install gem
 RUN gem install 'imap-backup'
